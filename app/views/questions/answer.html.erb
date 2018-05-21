@@ -1,0 +1,10 @@
+<% if @question == 'I am going to work' %>
+  <h2> <%= @question %></h2>
+  <h1> <%= @answers[1][:answer] %> </h1>
+<% elsif @question.include? "?" %>
+  <h2> <%= @question %></h2>
+  <h1> <%= @answers[2][:answer] %> </h1>
+<% else %>
+  <h2> <%= @question %></h2>
+  <h1><%= @answers[3][:answer] %></h1>
+<% end %>
